@@ -1,7 +1,7 @@
 ---
 title: "从Mercurial到Git"
 date: '2012-12-21'
-tags: [Tools]
+tags: [git]
 categories: [Tools]
 ---
 
