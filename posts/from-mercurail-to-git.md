@@ -25,6 +25,7 @@ echo "first line" > new_file;
 git add new_file;
 git commit -m "add new_file"
 </pre>
+
 注意这里的`git add`实际上做了两件事，改变跟踪状态和添加到暂存区。之后`git commit`就可以了，这样看来似乎和hg没什么区别，可是下一次提交里，如果我这样做：
 
 <pre>
@@ -73,16 +74,16 @@ git checkout -- code_file;
 
 >名可名，非常名  --- 《道德经》
 
-上面这句话用来吐槽Mercurial与git之间的术语差异。同样都是叫`revert`的命令，这差距咋就这么大呢。
+上面这句话用来吐槽Mercurial与git之间的术语差异。同样都是名字叫做`revert`的命令，做事的差距咋就这么大呢。
 
 比如某一天，我不小心把自己的工作目录弄乱了或者误删除了一个文件，怎么办呢。在Mercurial里面是很简单的，想恢复整个工作目录是`hg revert -a`，恢复某一个文件是`hg revert file-name`, 也可以用`-v`指定按照哪一个版本去恢复。
 
-Git里按照某一版本恢复文件的命令是`git checkout`，恢复整个工作目录是`git checkout HEAD -- .`, 恢复文件是`git checkout HEAD -- file-name`，可以在--的前面指定要恢复的版本，如果省略，默认的版本是当前的暂存区(见前面的代码)。不过在Git里也有一个叫revert的命令，但它做得却和`hg revert`根本不是一个事（可以试一试，保证很坑爹），它在Mercurial里的等价命令应该是`hg backout`，不过我几乎从来没在实际场合中用过这个命令，所以不再细述其用法
+Git里按照某一版本恢复文件的命令是`git checkout`，恢复整个工作目录是`git checkout HEAD -- .`, 恢复文件是`git checkout HEAD -- file-name`，可以在--的前面指定要恢复的版本，如果省略，默认的版本是当前的暂存区(见前面的代码)。有趣的是，在Git里也有一个叫revert的命令，但它做得却和`hg revert`根本不是一个事（可以试一试，保证很坑爹），它在Mercurial里的等价命令应该是`hg backout`，不过我几乎从来没在实际场合中用过这个命令，所以不细述其用法。
 
-除了checkout以外，`git reset --hard`也可以按照版本库头恢复工作目录。reset也是一个Git很危险的命令，在Mercurial中并没有和它等价的命令。
+除了checkout以外，`git reset --hard`也可以按照版本库头恢复工作目录。reset是一个Git很危险的命令，在Mercurial中并没有很类似的命令。
 
 
-### 默认的远程库与分支
+### 远程库与命名空间
 
 Git里的远程库有一个独立的命名空间，比如我从Github上clone了一个项目下来，默认的分支是master，是一个本地库。此外还有一个叫origin的命名空间，是远程库，它的下面有一个origin/master分支。在Mercurial则不存在这样的分法，本地库和远程库采用同一个命名空间，默认的分支叫default。
 
