@@ -1,10 +1,10 @@
-title : Blog Title
-tagline: Blog Tagline
+title : 不求东西
+tagline: 不求南北，各奔东西
 author :
-  name : Firstname Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Hanfei Sun
+  email : hfsun.tju@gmail.com
+  github : https://github.com/hanfeisun
+  twitter : bqdx
   feedburner : feedname
 
 navigation :
