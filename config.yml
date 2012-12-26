@@ -6,7 +6,7 @@ theme : twitter
 production_url : http://blog.hanfeisun.info
 
 posts:
-  permalink: /:categories/:title/
+  permalink: '/:year/:month/:filename'
   summary_lines: 10
   latest: 10
 
