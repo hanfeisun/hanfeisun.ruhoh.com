@@ -1,5 +1,5 @@
 ---
-title: "CistromeFinder: Web Portal to Explore ChIP-seq Data"
+title: "My first Web Application"
 date: '2012-12-23'
 description:
 categories: Bioinformatics
@@ -7,7 +7,8 @@ tags: [CistromeFinder]
 
 ---
 
-This tool is made to help biologists to check binding sites around a given gene. Following is an introduction from the [blog](http://www.longwoodgenomics.org/) of my adviser, [Xiaole Shirley Liu](http://www.stat.harvard.edu/faculty_page.php?page=xsliu.html).
+<img src="{{urls.media}}/cistromefinder.png" align="right">
+This tool is called [CistromeFinder](http://cistrome.org/finder). It is made to help biologists to check binding sites around a given gene. Following is an introduction from the [blog](http://www.longwoodgenomics.org/) of my adviser, [Xiaole Shirley Liu](http://www.stat.harvard.edu/faculty_page.php?page=xsliu.html).
 
 
 
