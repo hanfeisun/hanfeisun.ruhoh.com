@@ -1,5 +1,5 @@
 ---
-title: "My first Web Application"
+title: "My First Bioinformatics Web Application"
 date: '2012-12-23'
 description:
 categories: Bioinformatics
